@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 import { HtmlHTMLAttributes, useRef } from "react";
 import gsap from "gsap";
 import Announciation from "@/components/Announciation";
+import JourneyToBeth from "@/components/JourneyToBeth";
 
 export default function Home() {
   const container = useRef(null);
@@ -25,11 +26,12 @@ export default function Home() {
   return (
     <main
       ref={container}
-      className=" bg-gradient-to-br from-rose-500 to-blue-500  shadow-red-500 overflow-hidden"
+      className="bg-gradient-to-br from-rose-500 to-blue-500   overflow-hidden"
     >
-      <Image src={ctree} alt="" className=" h-screen  img" />
+      {/* <Image src={ctree} alt="" className=" h-screen  img" /> */}
       <Welcome />
       <Announciation />
+      <JourneyToBeth />
     </main>
   );
 }

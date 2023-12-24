@@ -1,16 +1,17 @@
 import { useLottie, useLottieInteractivity } from "lottie-react";
 import tree from "@/assets/animation-1.json";
 
-const style = {
-  height: 600,
-};
+// const style = {
+//   height: 600,
+//   border: "1px solid red",
+// };
 
 const options = {
   animationData: tree,
 };
 
 const Animation = () => {
-  const lottieObj = useLottie(options, style);
+  const lottieObj = useLottie(options);
   const Animation = useLottieInteractivity({
     lottieObj,
     mode: "scroll",
