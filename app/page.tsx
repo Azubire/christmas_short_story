@@ -34,7 +34,7 @@ export default function Home() {
             {" "}
             Made with love by Azubire 😎
           </span>
-          <span> (azubirepeter@gmail.com) | +23324212412</span>
+          <span> (azubirepeter@gmail.com) | +233242124312</span>
         </h1>
       </div>
     </main>

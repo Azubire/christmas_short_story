@@ -11,11 +11,11 @@ const WiseMen = () => {
       <div className="mx-auto  mb-10 p-5 bg-white shadow-xl shadow-white  rounded-lg  w-[90%] h-fit sm:w-1/2 sm:h-fit border ">
         <h1 className="flex items-center justify-between text-lg sm:text-3xl capitalize  text-rose-500   font-extrabold text-center">
           <span>
-            <LottieLoop src={ct} className="w-[50px] h-[50px] " />
+            <LottieScroll src={ct} className="w-[50px] h-[50px] " />
           </span>
           <span> Visit of the Wise Men</span>
           <span>
-            <LottieLoop src={ct} className="w-[50px] h-[50px] " />
+            <LottieScroll src={ct} className="w-[50px] h-[50px] " />
           </span>
         </h1>
         <h1 className="text-lg sm:text-3xl capitalize  text-white   font-extrabold text-center"></h1>

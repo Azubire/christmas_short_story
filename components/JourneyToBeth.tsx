@@ -2,6 +2,7 @@ import LottieLoop from "./LottieLoop";
 import Lotties from "./LottieScroll";
 import ml from "@/assets/multi-lines.json";
 import ct from "@/assets/animation-1.json";
+import LottieScroll from "./LottieScroll";
 
 const JourneyToBeth = () => {
   return (
@@ -10,11 +11,11 @@ const JourneyToBeth = () => {
       <div className="mx-auto mb-10 p-5 bg-gradient-to-br from-rose-500 shadow-xl shadow-white  rounded-lg  w-[90%] h-fit sm:w-1/2 sm:h-fit border ">
         <h1 className="flex items-center justify-between text-lg sm:text-3xl capitalize  text-white   font-extrabold text-center">
           <span>
-            <LottieLoop src={ct} className="w-[50px] h-[50px] " />
+            <LottieScroll src={ct} className="w-[50px] h-[50px] " />
           </span>
           <span> Journey to Bethlehem</span>
           <span>
-            <LottieLoop src={ct} className="w-[50px] h-[50px] " />
+            <LottieScroll src={ct} className="w-[50px] h-[50px] " />
           </span>
         </h1>
         <h1 className="text-lg sm:text-3xl capitalize  text-white   font-extrabold text-center"></h1>

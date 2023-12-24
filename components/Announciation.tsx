@@ -22,7 +22,7 @@ const Announciation = () => {
     tl.current = gsap
       .timeline({ repeat: -1, yoyo: true, ease: "power2.inOut" })
       .from(".annou", { x: 0 })
-      .to(".annou", { x: 200, duration: 20, ease: "power2.inOut" });
+      .to(".annou", { x: 200, duration: 5, ease: "power2.inOut" });
   });
   return (
     <>
@@ -38,11 +38,11 @@ const Announciation = () => {
         <div className="mx-auto  mb-10 p-5 bg-white shadow-xl shadow-white  rounded-lg  w-[90%] h-fit sm:w-1/2 sm:h-fit border ">
           <h1 className="flex items-center justify-between text-lg sm:text-3xl capitalize  text-rose-500   font-extrabold text-center">
             <span>
-              <LottieLoop src={ct} className="w-[50px] h-[50px] " />
+              <LottieScroll src={ct} className="w-[50px] h-[50px] " />
             </span>
             <span> Announciation</span>
             <span>
-              <LottieLoop src={ct} className="w-[50px] h-[50px] " />
+              <LottieScroll src={ct} className="w-[50px] h-[50px] " />
             </span>
           </h1>
         </div>
