@@ -1,27 +1,14 @@
 "use client";
 
 import Welcome from "@/components/Welcome";
-import Image from "next/image";
-import ctree from "@/assets/christmas-tree.svg";
-import { useGSAP } from "@gsap/react";
-import { HtmlHTMLAttributes, useRef } from "react";
-import gsap from "gsap";
+import { useRef } from "react";
 import Announciation from "@/components/Announciation";
 import JourneyToBeth from "@/components/JourneyToBeth";
+import TheBirth from "@/components/TheBirth";
 
 export default function Home() {
   const container = useRef(null);
-  const tl = useRef<gsap.core.Timeline | null>(null);
-
-  useGSAP(
-    () => {
-      tl.current = gsap
-        .timeline({ repeat: -1, yoyo: true })
-        .from(".img", { x: 0 })
-        .to(".img", { x: "100%", duration: 20, ease: "power2.inOut" });
-    },
-    { scope: container }
-  );
+  // const tl = useRef<gsap.core.Timeline | null>(null);
 
   return (
     <main
@@ -32,6 +19,7 @@ export default function Home() {
       <Welcome />
       <Announciation />
       <JourneyToBeth />
+      <TheBirth />
     </main>
   );
 }

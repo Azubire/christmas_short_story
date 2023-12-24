@@ -1,7 +1,7 @@
 import Lottie from "lottie-react";
-import React, { useRef } from "react";
+import { useRef } from "react";
 
-const Lotties = ({ src, className }: { src: unknown; className?: string }) => {
+const LottieLoop = ({ src, className }: { src: any; className?: string }) => {
   const lottieRef = useRef(null);
 
   return (
@@ -14,4 +14,4 @@ const Lotties = ({ src, className }: { src: unknown; className?: string }) => {
   );
 };
 
-export default Lotties;
+export default LottieLoop;
