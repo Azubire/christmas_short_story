@@ -19,7 +19,7 @@ const JourneyToBeth = () => {
         </h1>
         <h1 className="text-lg sm:text-3xl capitalize  text-white   font-extrabold text-center"></h1>
       </div>
-      <div className=" mx-auto p-5 sm:p-10 bg-gradient-to-t from-green-700 rounded-lg shadow-xl shadow-white  w-[90%] h-fit  border ">
+      <div className=" mx-auto p-5 sm:p-10 bg-gradient-to-t from-green-700 rounded-lg shadow-xl shadow-white  w-[90%] h-fit  border mb-20 mt-10">
         <h1 className="text-lg sm:text-3xl text-white   font-extrabold text-justify">
           Join Mary and her husband Joseph on a poignant journey to Bethlehem, a
           journey compelled by the decree of Caesar Augustus for a census. Feel

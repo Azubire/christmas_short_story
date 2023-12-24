@@ -18,43 +18,53 @@ const Announciation = () => {
     tl.current = gsap
       .timeline({ repeat: -1, yoyo: true, ease: "power2.inOut" })
       .from(".annouce", { x: 0 })
-      .to(".annouce", { x: 100, duration: 5, ease: "power2.inOut" });
+      .to(".annouce", { x: 800, duration: 20, ease: "power2.inOut" });
+    tl.current = gsap
+      .timeline({ repeat: -1, yoyo: true, ease: "power2.inOut" })
+      .from(".annou", { x: 0 })
+      .to(".annou", { x: 200, duration: 20, ease: "power2.inOut" });
   });
   return (
     <>
       <div ref={container} className="bg-gradient-to-t from-gray-800 mt-20">
-        <div className="grid sm:grid-cols-2 justify-center items-center px-4 sm:px-10">
-          <div>
-            <div className="mx-auto mb-10 p-5 bg-gradient-to-br from-rose-500 shadow-xl shadow-white  rounded-lg  w-[90%] h-fit  border first-letter:text-6xl mt-20">
-              <h1 className="flex items-center justify-between text-lg sm:text-3xl capitalize  text-white   font-extrabold text-center">
-                <span>
-                  <LottieLoop src={ct} className="w-[50px] h-[50px] " />
-                </span>
-                <span> Announciation</span>
-                <span>
-                  <LottieLoop src={ct} className="w-[50px] h-[50px] " />
-                </span>
-              </h1>
-            </div>
-
-            <h2 className="text-justify text-lg sm:text-2xl text-white   font-extrabold ">
-              As the story begins, the angel Gabriel visits Mary in the town of
-              Nazareth. Fear not, Mary, for you have found favor with God, he
-              says, announcing the miraculous birth that will change the course
-              of history.
-            </h2>
-          </div>
-          <div>
-            <Image src={tree} alt="" className=" h-[400px] w-auto annouce" />
-          </div>
+        <div>
+          <Image
+            src={tree}
+            alt=""
+            className="hidden sm:block h-[400px] w-auto annouce"
+          />
+          <Image src={tree} alt="" className=" w-auto annou sm:hidden" />
         </div>
-        <div className="mx-auto mb-5 p-5 bg-gradient-to-br from-rose-500 shadow-xl shadow-white  rounded-lg  w-[90%] h-fit sm:w-1/2 sm:h-fit border first-letter:text-6xl mt-20">
-          <h1 className="text-lg sm:text-3xl capitalize  text-white   font-extrabold text-center">
-            Let&apos;s continue the story
+        <div className="mx-auto  mb-10 p-5 bg-white shadow-xl shadow-white  rounded-lg  w-[90%] h-fit sm:w-1/2 sm:h-fit border ">
+          <h1 className="flex items-center justify-between text-lg sm:text-3xl capitalize  text-rose-500   font-extrabold text-center">
+            <span>
+              <LottieLoop src={ct} className="w-[50px] h-[50px] " />
+            </span>
+            <span> Announciation</span>
+            <span>
+              <LottieLoop src={ct} className="w-[50px] h-[50px] " />
+            </span>
           </h1>
         </div>
+        <div className=" mx-auto p-5 sm:p-10 bg-gradient-to-t from-gray-700 rounded-lg shadow-xl shadow-white  w-[90%] h-fit  border ">
+          <h1 className="text-lg sm:text-3xl text-white   font-extrabold text-justify">
+            As the story begins, the angel Gabriel visits Mary in the town of
+            Nazareth. Fear not, Mary, for you have found favor with God, he
+            says, announcing the miraculous birth that will change the course of
+            history.
+          </h1>
 
-        <LottieScroll src={lt} className="sm:h-[500px]" />
+          <div className="text-center mt-10">
+            <button
+              type="button"
+              className="border borde-white font-extrabold w-full text-white px-4 py-2  rounded-full"
+            >
+              Next is the journey 👇
+            </button>
+          </div>
+        </div>
+
+        <LottieScroll src={lt} className="sm:h-[500px] my-20" />
       </div>
     </>
   );
